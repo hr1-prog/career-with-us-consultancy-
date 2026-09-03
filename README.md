@@ -1,0 +1,1 @@
+SEO-ready Career With Us website. Replace YOUR-EMAIL@example.com in script.js and YOUR-DOMAIN-HERE in robots.txt/sitemap.xml before publishing. Then verify the domain in Google Search Console and submit sitemap.xml. Replace sample vacancies with genuine current jobs.
