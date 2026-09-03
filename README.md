@@ -1,4 +1,4 @@
-# Career With Us — SEO Website
+# Career With Us — Job Consultancy
 
 SEO-ready static website for GitHub Pages.
 
