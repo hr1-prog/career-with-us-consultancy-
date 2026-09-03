@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://YOUR-DOMAIN-HERE/</loc></url>
-<url><loc>https://YOUR-DOMAIN-HERE/jobs.html</loc></url>
-<url><loc>https://YOUR-DOMAIN-HERE/jobs-in-thane.html</loc></url>
-<url><loc>https://YOUR-DOMAIN-HERE/jobs-in-mumbai.html</loc></url>
-<url><loc>https://YOUR-DOMAIN-HERE/about.html</loc></url>
-<url><loc>https://YOUR-DOMAIN-HERE/contact.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/jobs.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/jobs-in-thane.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/jobs-in-mumbai.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/cv-builder.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/blogs.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/about.html</loc></url>
+<url><loc>https://hr1-prog.github.io/career-with-us-consultancy-/contact.html</loc></url>
 </urlset>
