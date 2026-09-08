@@ -22,6 +22,9 @@
 .simple-job{min-height:175px;display:flex;flex-direction:column;justify-content:space-between}.simple-job h3{font-size:24px;margin:18px 0}.six-jobs{grid-template-columns:repeat(3,1fr)}
 @media(ma.brand {
     margin-left: -25px;
+    .brand {
+    transform: translateX(-50px) !important;
+}
 }x-width:900px){.six-jobs{grid-template-columns:1fr 1fr}}@media(max-width:600px){.six-jobs{grid-template-columns:1fr}} .brand {
  .site-header .nav-wrap .brand {
     margin-left: -40px !important;
