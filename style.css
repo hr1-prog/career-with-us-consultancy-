@@ -20,4 +20,7 @@
 @media print{body{background:#fff}.site-header,.footer,.page-hero,.form-card,.notice{display:none!important}.section{padding:0}.container{width:100%}.cv-layout{display:block}.cv-paper{box-shadow:none;border:0;min-height:0;padding:30px}.cv-paper h1{font-size:30px}.cv-paper section{break-inside:avoid}}
 
 .simple-job{min-height:175px;display:flex;flex-direction:column;justify-content:space-between}.simple-job h3{font-size:24px;margin:18px 0}.six-jobs{grid-template-columns:repeat(3,1fr)}
-@media(max-width:900px){.six-jobs{grid-template-columns:1fr 1fr}}@media(max-width:600px){.six-jobs{grid-template-columns:1fr}}
+@media(ma.brand {
+    margin-left: -25px;
+}x-width:900px){.six-jobs{grid-template-columns:1fr 1fr}}@media(max-width:600px){.six-jobs{grid-template-columns:1fr}} 
+
