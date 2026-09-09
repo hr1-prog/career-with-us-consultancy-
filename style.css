@@ -79,3 +79,6 @@
 .whatsapp-float i {
     font-size: 36px;
 }
+.corner-logo {
+    display: none !important;
+}
