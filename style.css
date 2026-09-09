@@ -54,4 +54,8 @@
 .whatsapp-float span {
     display: none;
 }
-
+.whatsapp-float::before {
+    content: "☎";
+    font-size: 28px;
+    font-weight: bold;
+}
