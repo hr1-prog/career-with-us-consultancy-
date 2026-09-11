@@ -6,8 +6,25 @@ const defaultJobs=[
 {title:"Banking Job",company:"",location:"Thane",experience:"",salary:"",description:""},
 {title:"Tele Calling",company:"",location:"Thane",experience:"",salary:"",description:""}
 ];
-function getJobs(){try{return JSON.parse(localStorage.getItem("cwu_jobs"))||defaultJobs}catch(e){return defaultJobs}}
-function saveJobs(j){localStorage.setItem("cwu_jobs",JSON.stringify(j))}
+const API_URL = https://script.google.com/a/macros/careerwithus.co.in/s/AKfycbxcpPZM8pgn2uY6DePJfJX3WGbiTp-Z1Jq1oPngQDt0nqSamWjb1H_EJb3D0RjDoFVnWg/exec
+
+function getJobs(){
+  try {
+    return JSON.parse(localStorage.getItem("cwu_jobs")) || defaultJobs;
+  } catch(e) {
+    return defaultJobs;
+  }
+}
+
+function saveJobs(j){
+  localStorage.setItem("cwu_jobs", JSON.stringify(j));
+
+  fetch(API_URL, {
+    method: "POST",
+    headers: {"Content-Type":"text/plain"},
+    body: JSON.stringify(j[j.length - 1])
+  });
+}
 function jobCard(j){return `<article class="job-card simple-job"><span class="tag">HIRING NOW</span><h3>${escapeHtml(j.title)}</h3><a class="card-link" href="tel:9987388037">Contact / Apply →</a></article>`}
 function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
 function renderJobs(){const box=document.getElementById("jobsList");if(!box)return;const q=(document.getElementById("jobSearch")?.value||"").toLowerCase();const loc=document.getElementById("locationFilter")?.value||"";const exp=document.getElementById("experienceFilter")?.value||"";const list=getJobs().filter(j=>(!q||`${j.title} ${j.company} ${j.description}`.toLowerCase().includes(q))&&(!loc||j.location===loc)&&(!exp||j.experience.includes(exp)));box.innerHTML=list.length?list.map(jobCard).join(""):`<div class="notice">No jobs match your search right now.</div>`}
